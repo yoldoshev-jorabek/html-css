@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loaders</title>
+    <style>
+        .container{
+            background-color: #000;
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .loaders1{
+            width: 40px;
+            height: 10px;
+            border: 1px solid white;
+            background-color: #000;
+            animation-name: loaders1;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 0.5s;
+        }
+        @keyframes loaders1 {
+            0%{
+                width: 40px;
+                height: 10px;
+            }
+            100%{
+                width: 40px;
+                height: 60px;
+            }
+        }
+        .loaders2{
+            width: 40px;
+            height: 10px;
+            border: 1px solid white;
+            background-color: #000;
+            animation-name: loaders2;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+        @keyframes loaders2 {
+            0%{
+                width: 40px;
+                height: 10px;
+            }
+            100%{
+                width: 40px;
+                height: 60px;
+            }
+        }
+        .loaders3{
+            width: 40px;
+            height: 10px;
+            border: 1px solid white;
+            background-color: #000;
+            animation-name: loaders3;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+        }
+        @keyframes loaders3 {
+            0%{
+                width: 40px;
+                height: 10px;
+            }
+            100%{
+                width: 40px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loaders1">
+
+        </div>
+        <div class="loaders2">
+    
+        </div>
+        <div class="loaders3">
+    
+        </div>
+    </div>
+</body>
+</html>

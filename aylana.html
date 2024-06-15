@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .doira{
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: 3px solid black;
+            margin: 0 auto;
+            position: relative;
+        }
+        .chiziq{
+            border: 2px solid black;
+            width: 200px;
+            height: 0px;
+            position: absolute;
+            top: 298px;
+            left: 100px;
+            animation-name: aylan;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes aylan {
+            0%{
+                transform: rotate(90deg);
+                transform-origin: right;
+            }
+            100%{
+                transform: rotate(450deg);
+                transform-origin: right;
+            }
+        }
+        .s-doira{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+        input{
+            width: 80px;
+            height: 80px;
+            z-index: 4;
+            position: absolute;
+            top: 5;
+            left: 8px;
+            opacity: 0;
+        }
+        .btn{
+            width: 80px;
+            height: 40px;
+            background-color: lime;
+            border: 2px solid limegreen;
+            position: absolute;
+            border-radius: 22px;
+            top: 30px;
+            left: 10px;
+            transition: .5s;
+        }
+        .radius{
+            width: 40px;
+            height: 40px;
+            background-color: lime;
+            border: 2px solid limegreen;
+            border-radius: 50%;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            transition: .5s;
+        }
+        input:checked ~ .btn{
+            background-color: red;
+            border: 2px solid darkred;
+        }
+        input:checked ~ .btn .radius{
+            top: -1;
+            left: 40px;
+            background-color: red;
+            border: 2px solid darkred;
+        }
+        input:checked ~ .doira{
+            animation-name: doira;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes doira {
+            0%{
+                border: none;
+                background-color: aqua;
+            }
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: aqua;
+            }
+            75%{
+                background-color: blue;
+            }
+            100%{
+                border: none;
+                background-color: aqua;
+            }
+        }
+        input:checked ~ .doira .chiziq .s-doira{
+            animation-name: s-doira;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes s-doira {
+            0%{
+                background-color: darkblue;
+            }
+            25%{
+                background-color: aqua;
+            }
+            50%{
+                background-color: darkblue;
+            }
+            75%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: darkblue;
+            }
+        }
+        input:checked ~ .doira .chiziq{
+            animation-name: chiziq;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes chiziq {
+            0%{
+                border: 2px solid blue;
+            }
+            25%{
+                border: 2px solid aquamarine;
+            }
+            50%{
+                border: 2px solid blue;
+            }
+            75%{
+                border: 2px solid aquamarine;
+            }
+            100%{
+                border: 2px solid blue;
+            }
+            0%{
+                transform: rotate(90deg);
+                transform-origin: right;
+            }
+            100%{
+                transform: rotate(450deg);
+                transform-origin: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div class="btn">
+        <div class="radius"></div>
+    </div>
+    <div class="doira">
+        <div class="chiziq">
+            <div class="s-doira"></div>
+        </div>
+    </div>
+</body>
+</html>

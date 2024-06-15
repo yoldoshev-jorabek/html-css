@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zagruzka</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: #555;
+            margin: 0 auto;
+            margin-top: 200px;
+            position: relative;
+        }
+        .container > div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .container > div div{
+            clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+            width: 100%;
+            height: 100%;
+            background-color: #111;
+        }
+        .c-uch1{
+            top: 100px;
+            left: 100px;
+        }
+        .uch1{
+            transform: rotate(180deg);
+        }
+        .c-uch2{
+            top: 100px;
+            left: 100px;
+        }
+        .uch2{
+            transform: rotate(90deg);
+            animation: chap 8s linear infinite;
+        }
+        @keyframes chap {
+            0%{
+                transform: rotate(90deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                transform-origin: top left;
+            }
+        }
+        .c-uch3{
+            top: 100px;
+            left: 100px;
+        }
+        .uch3{
+            transform: rotate(-90deg);
+            animation: ong 2s linear infinite;
+        }
+        .c-uch4{
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c-uch1">
+            <div class="uch1"></div>
+        </div>
+        <div class="c-uch2">
+            <div class="uch2"></div>
+        </div>
+        <div class="c-uch3">
+            <div class="uch3"></div>
+        </div>
+        <div class="c-uch4">
+            <div class="uch4"></div>
+        </div>
+    </div>
+</body>
+</html>

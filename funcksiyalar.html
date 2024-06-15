@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>root</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        :root{
+            --rang: red;
+            --border: 1px solid;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0px 27px 31px 0px #00000040;
+            border-radius: 30px;
+            max-width: max-content;
+        }
+        .k-tablo{
+            text-align: center;
+            width: 368px;
+            height: 512px;
+            border-radius: 30px;
+            background-image: linear-gradient(to right, #6643FF,#312CEA );
+        }
+        .k-tablo > h1{
+            font-weight: 700;
+            font-size: 22px;
+            letter-spacing: 1%;
+            color: #857CF3;
+            margin: 0;
+            padding: 30px;
+;
+        }
+        .aylana{
+            width: 204px;
+            height: 204px;
+            background: linear-gradient(180deg, #4D22C9 0%, #4734F0 100%);
+            border-radius: 50%;
+            margin: 0 auto;
+            align-items: center;
+;
+        }
+        .aylana > h1{
+            font-weight: 700;
+            font-size: 74px;
+            margin: 0;
+            padding: 0;
+            padding-top: 50px;
+            color: #ffff;
+        }
+        .aylana > h4{
+            font-weight: 700;
+            font-size: 18px;
+            color: #857CF3;
+            margin: 0;
+            padding: 0;
+        }
+        .k-tablo > h2{
+            font-size: 30px;
+            font-weight: 700;
+            color: #ffff;
+        }
+        .k-tablo > h4{
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 23px;
+            letter-spacing: -2.5%;
+            text-align: center;
+            color: #C0C1FF;
+            width: 258px;
+            margin: 0 auto;
+        }
+        .o-tablo{
+            width: 370px;
+            height: 512px;
+            background: #FFFFFF;
+            border-radius: 30px;
+        }
+        .jamlanma > h1{
+            font-size: 22px;
+            font-weight: 700;
+            color: #323D58;
+            padding: 10px;
+        }
+        .jamlanma{
+            width: 290px;
+            margin: 0 auto;
+        }
+        .o-tablo > div > div{
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            align-items: center;
+            width: 290px;
+            height: 56px;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+        .jamlanma > div h4{
+            width: 69px;
+            height: 19px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .jamlanma > div h3{
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+        }
+        .jamlanma > div h3 span{
+            font-size: 18px;
+            font-weight: 700;
+            color: #969198;
+        }
+        .ramka1{
+            background-color: #FFF6F5;
+        }
+        .ramka2{
+            background-color: #FFFBF2;
+        }
+        .ramka3{
+            background-color: #F2FBFA;
+        }
+        .ramka4{
+            background-color: #F3F3FD;
+        }
+
+        .ramka1 > h4{
+            color: #E1676D;
+        }
+        .ramka2 > h4{
+            color: #DDBB64;
+        }
+        .ramka3 > h4{
+            color: #2CA989;
+        }
+        .ramka4 > h4{
+            color: #3742CE;
+        }
+        .jamlanma > button{
+            width: 290px;
+            height: 56px;
+            border-radius: 41px;
+            background-color: #303B59;
+            font-size: 16px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 25px;
+            border: none;
+            transition: .4s;
+        }
+        .jamlanma > button:hover{
+            background: linear-gradient(180deg, #6543FF 0%, #0401FF 100%);
+            transition: .5s;
+        }
+        @media (min-width: 400px) and (max-width: 754px) {
+            .container{
+                width: 100%;
+                box-shadow: none;
+                border-radius: 0px;
+            }
+            .k-tablo{
+                width: 100%;
+                border-radius: 0px 0px 30px 30px;
+                margin-top: -8px;
+            }
+            .o-tablo{
+                width: 100%;
+            }
+            .jamlanma{
+                width: 100%;
+                text-align: center;
+
+            }
+            .o-tablo > div div{
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+            .jamlanma > button{
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="box">
+            <div class="container">
+                <div class="k-tablo">
+                    <h1>Your Result</h1>
+                    <div class="aylana">
+                        <h1>76</h1>
+                        <h4>of 100</h4>
+                    </div>
+                    <h2>Great</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, ducimus!</h4>
+                </div>
+                <div class="o-tablo">
+                    <div class="jamlanma">
+                        <h1>Summary</h1>
+                    <div class="ramka1">
+                        <img src="./Vector (1).svg" alt="logo">
+                        <h4>Reaction</h4>
+                        <h3>80 <span>/ 100</span></h3>
+                    </div>
+                    <div class="ramka2">
+                        <img src="./Vector (1).svg" alt="logo">
+                        <h4>Reaction</h4>
+                        <h3>80 <span>/ 100</span></h3>
+                    </div>
+                    <div class="ramka3">
+                        <img src="./Vector (1).svg" alt="logo">
+                        <h4>Reaction</h4>
+                        <h3>80 <span>/ 100</span></h3>
+                    </div>
+                    <div class="ramka4">
+                        <img src="./Vector (1).svg" alt="logo">
+                        <h4>Reaction</h4>
+                        <h3>80 <span>/ 100</span></h3>
+                    </div>
+                    <button>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

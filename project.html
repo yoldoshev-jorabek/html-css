@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 78px;
+            background: linear-gradient(270deg, #B697FF 3.2%, #47D0FF 96.71%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #ffffff;
+            font-weight: 600;
+            z-index: 10;
+        }
+        nav > .menu{
+            display: flex;
+            gap: 25px;
+        }
+        .menu > i{
+            display: none;
+            color: #ffffff;
+        }
+        .menu > a{
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 400;
+            transition: .5s;
+        }
+        .menu > a:hover{
+            border-bottom: 2px solid #ffffff;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            padding-top: 78px;
+        }
+        .sarlavha{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .sarlavha > h1{
+            font-size: 48px;
+            font-weight: 500;
+            line-height: 72px;
+            color: #B896FF;
+        }
+        .k-sarlavha{
+            margin-left: 16.7%;
+        }
+        .k-sarlavha > p{
+            width: 439px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #464547;
+            padding: 0;
+        }
+        .logo1{
+            opacity: 0;
+            position: absolute;
+        }
+        .logo2{
+            opacity: 0;
+            position: absolute;
+            right: -1px;
+            bottom: -35px;
+        }
+        @media (min-width: 400px) and (max-width: 490px) {
+            header{
+                background: linear-gradient(3.37deg, #48D1FF 14.06%, #B798FF 92.83%);
+            }
+            nav{
+                background-color: transparent;
+                background-image: none;
+            }
+            nav > .menu > a{
+                display: none;
+            }
+            .menu > .bar{
+                display: block;
+            }
+            header > .img{
+                display: none;
+            }
+            .sarlavha{
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .k-sarlavha{
+                margin: 0 auto;
+                text-align: center;
+            }
+            .sarlavha > h1{
+                color: #ffffff;
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 68px;
+            }
+            .k-sarlavha > p{
+                width: 310px;
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+            }
+            
+            .logo1{
+                opacity: 1;
+            }
+            .logo2{
+                opacity: 1;
+            }
+        }
+        aside{
+            background: #E4EAF0;
+        }
+        aside > h1{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+            text-align: center;
+            color: #464547;
+            width: 684px;
+            margin: 0 auto;
+            padding-top: 130px;
+        }
+        aside > h4{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: #666666;
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        aside > .matn{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .matn > p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #666666;
+        }
+        .matn > p:first-child{
+            width: 435px;
+        }
+        .matn > p:last-child{
+            width: 440px;
+        }
+        .btn > button{
+            width: 125px;
+            height: 36px;
+            border-radius: 18px;
+            background: #4CCFFF;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            color: #ffffff;
+            border: none;
+        }
+        .btn{
+            margin: 0 auto;
+            margin-top: 20px;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+        section{
+            background: linear-gradient(73.88deg, #B798FF 9.06%, #48D1FF 88.43%);
+        }
+        section > h1{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+            text-align: center;
+            color: #ffffff;
+            width: 507px;
+            margin: 0 auto;
+            padding: 90px;
+        }
+        .btn2{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .btn2 > button{
+            width: 182.64px;
+            height: 180.71px;
+            border-radius: 50%;
+            border: none;
+            color: #ffffff;
+        }
+        .Polygon{
+            width: 66.26px;
+            height: 85.23px;
+            transform: rotate(90deg);
+            background: #B899FF;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            text-align: center;
+            margin: 0 auto;
+            margin-left: 63px;
+        }
+        section > p{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: center;
+            color: #ffffff;
+            width: 524px;
+            margin: 0 auto;
+            padding: 70px;
+        }
+        footer{
+            background: linear-gradient(89.2deg, #5240B4 -23.42%, #B596FD 128.33%);
+            display: flex;
+            justify-content: space-around;
+            color: #ffffff;
+            align-items: center;
+        }
+        .project{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+        }
+        .max-s > h4{
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.2em;
+        }
+        .mini-project > p:first-child{
+            width: 174px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: #FFFFFFB2;
+        }
+        .mini-project > p:last-child{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: #FFFFFFB2;
+        }
+        .min-s > p{
+            color: #FFFFFFB2;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2>PROJECT</h2>
+        <div class="menu">
+            <a href="#">projects</a>
+            <a href="#">about us</a>
+            <a href="#">stories</a>
+            <a href="#">contact</a>
+            <i class="fa-solid fa-bars bar"></i>
+            <i class="fa-solid fa-bars-staggered bar-x"></i>
+        </div>
+    </nav>
+    <header>
+        <div class="k-sarlavha">
+            <div class="sarlavha">
+                <img src="./img/logo_n2@3x 1.png" alt="logo">
+                <h1>your <br> headline <br> here</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit sed do eiusmod.
+            </p>
+        </div>
+        <div class="img">
+            <img src="./img/M2_About Healthcare_L1_001 копия 3@3x 1.png" alt="header_logo">
+        </div>
+        <img src="./img/lll_2 копия@3x 2.png" alt="logo1" class="logo1">
+        <img src="./img/lll_2 копия 2@3x 1.png" alt="logo2" class="logo2">
+    </header>
+    <aside>
+        <h1>This is the Section Headline,
+            Continues to Two Lines
+        </h1>
+        <h4>
+            Lorem ipsum dolor sit amet, consectetur  
+            adipiscing elit sed do eiusmod.
+        </h4>
+        <div class="matn">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+ 
+        </div>
+        <div class="btn">
+            <button>READ MORE</button>
+        </div>
+    </aside>
+    <section>
+        <h1>Learn more
+            about our culture...
+        </h1>
+        <div class="btn2">
+            <button>
+                <div class="Polygon">
+                </div>
+            </button>
+        </div>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+    <footer>
+        <div class="max-s">
+            <div class="project">
+                <img src="./img/logo_n2@3x 2.png" alt="logo">
+                <div class="mini-project">
+                    <p>123 Street,
+                        Anytown, USA 12345
+                    </p>
+                    <p>
+                        hello@website.com
+                    </p>
+                </div>
+            </div>
+            <h4>PROJECT</h4>
+        </div>
+        <div class="min-s">
+            <p>© 2021 Project. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

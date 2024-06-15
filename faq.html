@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, blue, blueviolet);
+        }
+        *{
+            font-family: sans-serif;
+        }
+        .container{
+            margin: 100px;
+            padding: 0;
+        }
+        .card-max{
+            width: 920px;
+            height: 510px;
+            border: none;
+            background: white;
+            border-radius: 10px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0px 20px 19px 0px #00000040;
+        }
+        .matn{
+            margin-top: 50px;
+        }
+        .yigindi{
+            overflow: hidden;
+            height: 350px;
+            transition: all 1s;
+        }
+        .block{
+            border-bottom: 1px solid #525157;
+            position: relative;
+            width: 351px;
+            margin-top: 20px;
+            transition: all 1s;
+        }
+        .block > input{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+        }
+        .block > h1{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .block > span{
+            position: absolute;
+            top: -10;
+            right: 0;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .block > .span2{
+            opacity: 0;
+        }
+        .block > h2{
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 17.36px;
+            letter-spacing: 0.005em;
+            color: #525157;
+        }
+        .block > input{
+            top: 0;
+            right: 0;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        }
+        .yashirin{
+            display: none;
+            color: #525157;
+            transition: all 1s;
+        }
+        .yashirin > h4{
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17.58px;
+
+        }
+        input:checked + h2{
+            color: #000;
+            transition: all 1s;
+        }
+        input:checked ~ span{
+            opacity: 0;
+        }
+        input:checked ~ .span2{
+            opacity: 1;
+        }
+        input:checked ~ .yashirin{
+            display: block;
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-max">
+            <div class="img">
+                <img src="./img/-000402477_p_s-removebg-preview.png" alt="logo">
+            </div>
+            <div class="matn">
+                <h1>FAQ</h1>
+                <div class="yigindi">
+                    <div class="block">
+                            <input type="checkbox">
+                            <span>+</span>
+                            <span class="span2">-</span>
+                            <h2>how many team members can i invite?</h3>
+                        <div class="yashirin">
+                            <h4>No more than 2GB. All files in your account must fit yourallotted storage space.</h4>
+                        </div>
+                    </div>
+                    <div class="block">
+                            <input type="checkbox">
+                            <span>+</span>
+                            <span class="span2">-</span>
+                            <h2>how many team members can i invite?</h3>
+                        <div class="yashirin">
+                            <h4>No more than 2GB. All files in your account must fit yourallotted storage space.</h4>
+                        </div>
+                    </div>
+                    <div class="block">
+                            <input type="checkbox">
+                            <span>+</span>
+                            <span class="span2">-</span>
+                            <h2>how many team members can i invite?</h3>
+                        <div class="yashirin">
+                            <h4>No more than 2GB. All files in your account must fit yourallotted storage space.</h4>
+                        </div>
+                    </div>
+                    <div class="block">
+                            <input type="checkbox">
+                            <span>+</span>
+                            <span class="span2">-</span>
+                            <h2>how many team members can i invite?</h3>
+                        <div class="yashirin">
+                            <h4>No more than 2GB. All files in your account must fit yourallotted storage space.</h4>
+                        </div>
+                    </div>
+                    <div class="block">
+                            <input type="checkbox">
+                            <span>+</span>
+                            <span class="span2">-</span>
+                            <h2>how many team members can i invite?</h3>
+                        <div class="yashirin">
+                            <h4>No more than 2GB. All files in your account must fit yourallotted storage space.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

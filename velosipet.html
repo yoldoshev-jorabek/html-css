@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>velosipet</title>
+    <style>
+        .container{
+            position: relative;
+            /* border: 1px solid black; */
+            animation: surish 6s linear infinite;
+            box-sizing: border-box;
+        }
+        @keyframes surish {
+            0%{
+                transform: translate(0px,100px);
+            }
+            25%{
+                transform: translate(-20px,100px);
+            }
+            50%{
+                transform: translate(300px,100px);
+            }
+            75%{
+                transform: translate(280px,100px);
+            }
+            100%{
+                transform: translate(0px,100px);
+            }
+        }
+        img{
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            width: 400px;
+            height: 400px;
+        }
+        img:first-child{
+            width: 150px;
+            height: 150px;
+            top: 205px;
+            left: 330px;
+            z-index: 2;
+        }
+        img:last-child{
+            width: 250px;
+            height: 250px;
+            top: 367px;
+            left: 552px;
+            z-index: -1;
+            animation: aylan 2s linear infinite;
+        }
+        .orqa{
+            width: 250px;
+            height: 250px;
+            top: 365px;
+            left: 190px;
+            z-index: -1;
+            animation: aylan 2s linear infinite;
+        }
+        @keyframes aylan {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .galtak{
+            width: 70px;
+            height: 100px;
+            top: 470px;
+            left: 430px;
+            animation: aylan 2s linear infinite;
+        }
+        .yolak{
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            border: 1px solid black;
+            width: 200%;
+            height: 740px;
+            z-index: -2;
+            animation: yur 2s linear infinite;
+            background-image: url('./img/pngegg.png');
+        }
+        @keyframes yur {
+            0%{
+                transform: translate(0%);
+            }
+            100%{
+                transform: translate(-44.5%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/cjqptq4vutv2h2ta7b30-removebg-preview.png" alt="o'rindig'i">
+    <img src="./img/-000402477_p_s-removebg-preview.png" alt="velosipet">
+    <img src="./img/image.png" alt="diska" class="galtak">
+    <img src="./img/image-removebg-preview.png" alt="gildirak" class="orqa">
+    <img src="./img/image-removebg-preview.png" alt="g'ildirak">
+    </div>
+    <div class="yolak"></div>
+</body>
+</html>

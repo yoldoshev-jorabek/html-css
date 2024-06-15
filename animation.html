@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+                background-image: linear-gradient(to right, aqua, blue);
+                box-shadow: 0 0 20px aqua ,
+                            0 0 40px aqua ;
+            width: 300px;
+            height: 200px;
+            border: 1px solid white;
+            transition: .5s;
+            animation-name: box;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes box{
+            0%{
+                background-image: linear-gradient(to right, aqua, blue);
+                box-shadow: 0 0 20px aqua ,
+                            0 0 40px aqua ;
+            }
+            100%{
+                background-image: linear-gradient(to right, blue, aqua);
+                box-shadow: 0 0 20px blue ,
+                            0 0 40px blue ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
